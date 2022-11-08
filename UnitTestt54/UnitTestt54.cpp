@@ -4,6 +4,7 @@
 #include <math.h>
 #include <iomanip>
 #include <cmath>
+#include "../lab__5.4/lab__5.4.cpp"
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
@@ -15,10 +16,10 @@ namespace UnitTest54
 
 		TEST_METHOD(TestMethod1)
 		{
-			int N = 4;
-			double expected, double res;
-			res = S1(1.02103);
-			double expected = calculate(S1);
+			int N = 2;
+			int i = 3;
+			double res = S1(N, 1);
+			double expected = 0.88009706091589401;
 
 
 			Assert::AreEqual(res, expected);
